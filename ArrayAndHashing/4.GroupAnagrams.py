@@ -14,3 +14,6 @@ class Solution:
         result.sort(key=len)   # smallest groups first (optional)
 
         return result
+
+s = Solution()
+print(s.groupAnagrams(["cat", "tac", "pot", "top", "act"]))
