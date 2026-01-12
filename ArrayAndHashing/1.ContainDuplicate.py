@@ -1,4 +1,4 @@
-class Solution():
+class Solution:
     def hasDuplicate(nums):
         seen = set(nums)
 
