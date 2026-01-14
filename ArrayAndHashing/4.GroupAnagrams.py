@@ -4,7 +4,7 @@ class Solution:
     def groupAnagrams(self, strs):
 
         groups = defaultdict(list)
-        
+
         #access every string in collection
         for str in strs:
             #create a list for key with 26 elements with 0 value
@@ -22,5 +22,5 @@ class Solution:
         return result
         
 
-s = Solution()
-print(s.groupAnagrams(["act","pots","tops","cat","stop","hat"]))
+#s = Solution()
+#print(s.groupAnagrams(["act","pots","tops","cat","stop","hat"]))

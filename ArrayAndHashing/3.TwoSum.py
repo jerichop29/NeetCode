@@ -1,11 +1,16 @@
 class Solution:
     def twoSum(nums, target):
+        #dictionary initialization
         seen = {}
         
-        for i, num in enumerate(nums):
-            complementary = target - num
+        #Use hashmap structure 
+        for i, num in enumerate(nums): #get the key and value of list
+            complementary = target - num #make a temporary variable to check if it exist
+
+            #if complementary not exist in dictionary just add key and value
             if complementary not in seen:
                 seen[num] = i
+            #if exist display the value and current index  
             else:
                 print(seen)
                 return [seen[complementary], i]
