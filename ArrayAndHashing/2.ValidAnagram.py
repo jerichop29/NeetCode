@@ -7,6 +7,6 @@ class Solution:
             return False
         return True
     
-#print(Solution.isAnagram("jar", "jam")) False
-#print(Solution.isAnagram("racecar", "carrace")) True
+print(Solution.isAnagram("jar", "jam")) #False
+print(Solution.isAnagram("racecar", "carrace")) #True
 
