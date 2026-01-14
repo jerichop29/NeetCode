@@ -22,5 +22,5 @@ class Solution:
         return result
         
 
-#s = Solution()
-#print(s.groupAnagrams(["act","pots","tops","cat","stop","hat"]))
+s = Solution()
+print(s.groupAnagrams(["act","pots","tops","cat","stop","hat"]))
