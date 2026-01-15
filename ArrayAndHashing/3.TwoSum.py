@@ -14,5 +14,4 @@ class Solution:
             else:
                 return [seen[complementary], i]
 
-print(Solution.twoSum([3,4,5,6], 7)) #[0,1]
-print(Solution.twoSum([3,4,5,6], 20)) #none
+print(Solution.twoSum([3,4,5,6], 9)) #[0,3]
