@@ -16,3 +16,4 @@ class Solution:
 
 print(Solution.twoSum([3,4,5,6], 9)) #[0,3]
 print(Solution.twoSum([3,4,5,7], 6)) #none
+print(Solution.twoSum([3,4,5,7],12)) #none
