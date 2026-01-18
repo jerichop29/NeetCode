@@ -1,10 +1,19 @@
-from collections import Counter
-
 class Solution:
     def topKFrequent(self, nums, k):
-        counter = Counter(nums)
-        result = sorted(list(counter.keys())[-1:-k-1:-1])
-        return result
+        count = {}
+        for num in nums:
+            count[num] = 1 + count.get(num, 0)
+
+        arr = []
+        for num, cnt in count.items():
+            arr.append([cnt, num])
+        print(arr)
+        arr.sort()
+
+        res = []
+        while len(res) < k:
+            res.append(arr.pop()[1])
+        return res
 
 s = Solution()
-print(s.topKFrequent([7,7], 1))
+print(s.topKFrequent([1,1,1,1,1,2,2,2,2,2,2,3,3], 2))
